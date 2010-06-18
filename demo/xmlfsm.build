@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<project name="XML State Machine" default="build" basedir=".">
+    
+
+    <target name="build" description="compiles the source code">
+        <csc target="exe" output="xmlfsm.exe" debug="true" doc="XMLStateMachine.xml">
+            <sources>
+                <includes name="XMLStateMachine.cs"/>
+                <includes name="VendingMachine.cs"/>
+            </sources>
+			<references>
+                <includes name="System.Diagnostics.dll"/>
+                <includes name="System.Xml.dll"/>
+			</references>
+        </csc>
+    </target>
+</project>
